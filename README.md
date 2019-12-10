@@ -46,7 +46,7 @@ Cenários:
 
 
 
-Para escrever o teste deve ser utilizado a linguagem Python e tecnologia que desejar mas lembre-se a proposta é avaliar a sua capacidade como desenvolvedor.
+Para escrever o teste deve ser utilizado a linguagem Python e tecnologia que desejar, mas lembre-se a proposta é avaliar a sua capacidade como desenvolvedor.
 
 Ao concluir, publique o resultado em seu repositório Git (GitHub, BitBucket, etc) e envie-nos a URL de seu desafio para que possamos avaliar.
 
