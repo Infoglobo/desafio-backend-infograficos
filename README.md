@@ -12,7 +12,7 @@ Bora lá?
 - API deverá ser REST;
 - Ler de uma API online;
 - Persistir em um banco;
-- Criar a infra de acordo com a arquitetura da imagem.
+- Criar a infra de acordo com a arquitetura abaixo.
 
 <p align="center">
 	<img src="https://d37iydjzbdkvr9.cloudfront.net/desafio-backend/arquitetura_infra1.png">
