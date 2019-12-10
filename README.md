@@ -26,7 +26,6 @@ Bora lá?
 * Deverá ser possível filtrar esses dados, como por exemplo: Ver somente as musicas de um album desejado; remover ou adicionar novas musicas deste album.
 * É importante que seja feita a consulta a partir da API do Itunes para obter informações já existentes.
 * Caso necessário, normalizar os dados para que seja mais amigável ao usuário da API.
-* O servidores devem se comunicar para realizar  web deve conectar ao servidor de banco de dados.
 
 
 URL: https://affiliate.itunes.apple.com/resources/documentation/itunes-store-web-service-search-api/#searchexamples
