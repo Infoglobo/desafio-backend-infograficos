@@ -13,9 +13,9 @@ Bora lá?
 - Ler de uma API online;
 - Persistir em um banco;
 - Criar a infra de acordo com a arquitetura da imagem.
-
+<p align="center">
 ![Arquitetura da infra](https://d37iydjzbdkvr9.cloudfront.net/desafio-backend/arquitetura_infra1.png)
-
+</p>
 - Disponibilizar o código rodando no Docker.
 - Fazer testes unitários;
 - Clean code.
