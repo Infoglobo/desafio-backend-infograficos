@@ -17,7 +17,7 @@ Bora lá?
 - Fazer testes unitários;
 - Clean code.
 
-![Arquitetura da infra](https://d37iydjzbdkvr9.cloudfront.net/desafio-backend/arquitetura_infra.png)
+![Arquitetura da infra](https://d37iydjzbdkvr9.cloudfront.net/desafio-backend/arquitetura_infra1.png)
 
 * Deverá ser possível consultar todos os álbuns e músicas de um certo artista e manipulá-los a partir de endpoints REST. 
 * Deverá ser possível filtrar esses dados, como por exemplo: Ver somente as musicas de um album desejado; remover ou adicionar novas musicas deste album.
