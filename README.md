@@ -30,7 +30,7 @@ Bora lá?
 
 URL: https://affiliate.itunes.apple.com/resources/documentation/itunes-store-web-service-search-api/#searchexamples
 
-### OBS: Quem estiver tendo problema para acessar a API do itunes, deve utilizar a API do Deezer: 
+### OBS: Quem estiver tendo problemas para acessar a API do itunes, deve utilizar a API do Deezer: 
    - https://developers.deezer.com/api
 
 Cenários:
