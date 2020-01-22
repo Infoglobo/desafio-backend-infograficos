@@ -28,9 +28,10 @@ Bora lá?
 * Caso necessário, normalizar os dados para que seja mais amigável ao usuário da API.
 
 
-## URL: https://affiliate.itunes.apple.com/resources/documentation/itunes-store-web-service-search-api/#searchexamples
+URL: https://affiliate.itunes.apple.com/resources/documentation/itunes-store-web-service-search-api/#searchexamples
 
-OBS: Quem estiver tendo problema para acessar a API do itunes, deve utilizar a API do Deezer: https://developers.deezer.com/api
+## OBS: Quem estiver tendo problema para acessar a API do itunes, deve utilizar a API do Deezer: 
+   - https://developers.deezer.com/api
 
 Cenários:
 * Listar e filtrar artista/album/musica
