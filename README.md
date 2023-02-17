@@ -8,36 +8,42 @@ Bora lá?
 
 ## Objetivo
 
-- Fazer um CRUD;
-- API deverá ser REST;
-- Ler de uma API online;
-- Persistir em um banco;
-- Criar a infra de acordo com a arquitetura abaixo.
+Crie um projeto que será o nosso **Admin da infografia**.
 
-<p align="center">
-	<img src="https://d37iydjzbdkvr9.cloudfront.net/desafio-backend/arquitetura_infra1.png">
-</p>
+Agora precisamos coletar os dados referentes ao clima nas cidades do Brasil para que possamos gerar dados para a criação de um infográfico sobre o clima.
 
-- Disponibilizar o código rodando no Docker.
-- Fazer testes unitários;
-- Clean code.
+Iremos coletar o histórico diário do clima utilizando a **API Weatherstack** e iremos persistir os dados no nosso projeto **Admin da infografia**.
 
-* Deverá ser possível consultar todos os álbuns e músicas de um certo artista e manipulá-los a partir de endpoints REST. 
-* Deverá ser possível filtrar esses dados, como por exemplo: Ver somente as musicas de um album desejado; remover ou adicionar novas musicas deste album.
-* É importante que seja feita a consulta a partir da API do Itunes para obter informações já existentes.
-* Caso necessário, normalizar os dados para que seja mais amigável ao usuário da API.
+- URL da API: https://weatherstack.com/
+- Documentação: https://weatherstack.com/documentation#historical_weather
 
 
-URL: https://affiliate.itunes.apple.com/resources/documentation/itunes-store-web-service-search-api/#searchexamples
+Com os dados persistidos no nosso banco de dados agora iremos criar uma API REST dento do projeto **Admin da infografia** para que seja consumida pelo nosso infográfico.
 
-### OBS: Quem estiver tendo problemas para acessar a API do itunes, deve utilizar a API do Deezer: 
-   - https://developers.deezer.com/api
 
-Cenários:
-* Listar e filtrar artista/album/musica
-* Adicionar artista/album/musica
-* Atualizar artista/album/musica
-* Deletar artista/album/musica
+### Requisitos
+
+- Fazer um CRUD usando o framework Django;
+- Ler os dados da API Weatherstack;
+- Persistir os dados do clima no banco de dados MySQL;
+- Criar uma API que deverá ser REST;
+
+
+### Diferencial
+
+- Cobertura de testes;
+- Projeto conteinerizado;
+- Organização e legibilidade do código;
+
+### O que é esperado?
+
+- Deverá ser possível consultar todos os dados de cada cidade.
+
+- Deverá ser possível filtrar esses dados, como por exemplo: Ver somente os dados do clima de uma cidade desejada;
+
+- É importante que seja feita a consulta a partir da API Weatherstack para obter informações já existentes.
+
+- Caso necessário, normalizar os dados para que seja mais amigável ao usuário da API.
 
 ## Ganhe Pontos Conosco :)
 
@@ -47,8 +53,7 @@ Cenários:
 * Organização e legibilidade do código;
 
 
-
-Para escrever o teste deve ser utilizado a linguagem Python e tecnologia que desejar, mas lembre-se a proposta é avaliar a sua capacidade como desenvolvedor.
+Para escrever os testes deve ser utilizado a linguagem Python e tecnologia que desejar, mas lembre-se a proposta é avaliar a sua capacidade como desenvolvedor.
 
 Ao concluir, publique o resultado em seu repositório Git (GitHub, BitBucket, etc) e envie-nos a URL de seu desafio para que possamos avaliar.
 
@@ -60,4 +65,3 @@ A Infoglobo através de seus produtos - os jornais O Globo, Extra e Expresso, co
 
 ## Editora Globo
 Desde 1952, a Editora Globo dissemina conhecimento entre os leitores e produz um jornalismo independente que antecipa as transformações da sociedade. Moderna, dinâmica e inovadora, a empresa conecta consumidores a conteúdos que transformam suas vidas e oferecem a eles a liberdade de escolherem em qual plataforma preferem ler. Com mais de 16 revistas no portfólio - incluindo as marcas Vogue, Casa Vogue, GQ e Glamour, após joint-venture estabelecida com a Condé Nast - a Editora Globo e Edições Globo Condé Nast têm 3,4 milhões de cópias por mês, 9,2 milhões de leitores, 18 websites, 11,4 milhões de visitantes únicos por mês, 40 eventos anuais, 25 aplicativos para iPhone, iPad e Android e mais de 1 milhão de downloads. Ainda, contamos com a marca Globo Livros, que tem mais de mil títulos no catálogo de livros, de autores nacionais e internacionais, publicados em menos de dois anos. No digital, a marca conta com 200 títulos e parcerias com os principais players do mercado, como Apple, Kobo Cultura, Google, Saraiva and Amazon.
-
