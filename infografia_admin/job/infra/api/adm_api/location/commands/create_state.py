@@ -27,6 +27,6 @@ class CreateState(BaseCommandRequest[StateCallbackDto]):
             f"{Settings.admin_api_url}/api/v1/location/state", data=self.data.dict()
         )
         logger.info(
-            f"inserted {self.data.state_name} state into Admin Api - status code: {response.status_code} body: {response.json()}"
+            f"inserted {self.data.state_name} state into Admin Api - status code: {response.status_code} body: {response.json()}"  # pylint: disable=C0301
         )
         return response

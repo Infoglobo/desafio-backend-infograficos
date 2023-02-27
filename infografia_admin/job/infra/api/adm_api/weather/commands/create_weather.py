@@ -36,6 +36,6 @@ class CreateWeather(BaseCommandRequest[WeatherCallbackDto]):
             f"{Settings.admin_api_url}/api/v1/weather/", data=self.data.dict()
         )
         logger.info(
-            f"Inserted weather from {self.data.city_name} into Admin Api - status code: {response.status_code} body: {response.json()}"
+            f"Inserted weather from {self.data.city_name} into Admin Api - status code: {response.status_code} body: {response.json()}"  # pylint: disable=C0301
         )
         return response

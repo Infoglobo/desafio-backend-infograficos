@@ -33,6 +33,6 @@ class CreateCity(BaseCommandRequest[CityCallbackDto]):
             f"{Settings.admin_api_url}/api/v1/location/city", data=self.data.dict()
         )
         logger.info(
-            f"Inserted {self.data.name} city into Admin Api - status code: {response.status_code} body: {response.json()}"
+            f"Inserted {self.data.name} city into Admin Api - status code: {response.status_code} body: {response.json()}"  # pylint: disable=C0301
         )
         return response

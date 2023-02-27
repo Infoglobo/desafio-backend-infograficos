@@ -15,7 +15,7 @@ class ListStates(BaseCommandRequest[StateDto]):
             f"{Settings.ibge_api_url}/api/v1/localidades/estados"
         )
         logger.info(
-            f"Listed states by ibge api - status code: {response.status_code} body: {response.json()}"
+            f"Listed states by ibge api - status code: {response.status_code} body: {response.json()}"  # pylint: disable=C0301
         )
         return response
 

@@ -1,10 +1,11 @@
 from typing import List
 
 import httpx
+from loguru import logger
+
 from infografia_admin.job.app.config.settings import Settings
 from infografia_admin.job.app.dto.weather import WeatherDto
 from infografia_admin.job.infra.base.command import BaseCommandRequest
-from loguru import logger
 
 
 class GetCurrentWeatherByCity(BaseCommandRequest[WeatherDto]):
@@ -38,12 +39,12 @@ class GetCurrentWeatherByCity(BaseCommandRequest[WeatherDto]):
                     "query": self.city_name,
                 },
             )
-        except Exception as err:
+        except Exception as err:  # pylint: disable=W0718
             logger.error(
                 f"An error occurred when Getting weather from {self.city_name} - error: {err}"
             )
             return None
         logger.info(
-            f"Getted weather from {self.city_name} - status code: {response.status_code} body: {response.json()}"
+            f"Getted weather from {self.city_name} - status code: {response.status_code} body: {response.json()}"  # pylint: disable=C0301
         )
         return response

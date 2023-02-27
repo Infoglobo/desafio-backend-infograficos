@@ -1,11 +1,11 @@
-from typing import Any, Coroutine, List
+from typing import List
 
 import httpx
 from loguru import logger
-from infografia_admin.job.app.dto.city import CityDto
 
-from infografia_admin.job.infra.base.command import BaseCommandRequest
 from infografia_admin.job.app.config.settings import Settings
+from infografia_admin.job.app.dto.city import CityDto
+from infografia_admin.job.infra.base.command import BaseCommandRequest
 
 
 class ListCitysByState(BaseCommandRequest[List[CityDto]]):
@@ -19,7 +19,7 @@ class ListCitysByState(BaseCommandRequest[List[CityDto]]):
             f"{Settings.ibge_api_url}/api/v1/localidades/estados/{self.state_acronym}/distritos"
         )
         logger.info(
-            f"Listed cities from {self.state_acronym} - status code: {response.status_code} body: {response.json()}"
+            f"Listed cities from {self.state_acronym} - status code: {response.status_code} body: {response.json()}"  # pylint: disable=C0301
         )
         return response
 
